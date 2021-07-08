@@ -1,0 +1,75 @@
+{
+  "type": "record",
+  "namespace":"com.google.analytics",
+  "name": "ga4",
+  "fields": [
+    {
+      "name": "event_timestamp",
+      "type": {
+               "type":"long",
+               "logicalType":"timestamp-millis"
+            },
+      "doc": "timestamp"
+    },
+    {
+      "name": "event_uuid",
+      "type": "string",
+      "doc": "uuid"
+    },
+    {
+      "name": "stream_id",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null,
+      "doc": "",
+      "aliases": ["x-ga-measurement_id"]
+    },
+    {
+      "name": "screen_resolution",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null,
+      "doc": ""
+    },
+    {
+      "name": "language",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null,
+      "doc": ""
+    },
+    {
+      "name": "page_location",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null,
+      "doc": ""
+    },
+    {
+      "name": "page_referrer",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null,
+      "doc": ""
+    },
+    {
+      "name": "page_title",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null,
+      "doc": ""
+    }
+  ]
+}
